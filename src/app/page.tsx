@@ -1,9 +1,9 @@
-import Image from "next/image";
+import IntroBar from "./Components/intro-bar.jsx"
 
 export default function Home() {
   return (
-    <main className="">
-      hello world
+    <main>
+        <IntroBar />
     </main>
-  );
+  )
 }

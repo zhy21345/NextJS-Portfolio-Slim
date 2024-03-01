@@ -16,6 +16,17 @@
   }
 }
 
+#container {
+  display: flex; /* displays flex-items (children) inline */
+  flex-direction: column; /* stacks them vertically */
+  height: 100%; /* needs to take the parents height, alternative: body {display: flex} */
+}
+
+main {
+  flex: 1; /* takes the remaining height of the "container" div */
+  overflow: auto; /* to scroll just the "main" div */
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -26,8 +37,25 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1 {
+  font-weight: 700; /* Bold */
+  font-size: 40px;
+  color: #374151;
+}
+
+h2 {
+  font-weight: 400; /* Regular */
+  font-size: 24px;
+  color: #374151;
+}
+
+p {
+  font-weight: 400; /* Regular */
+  font-size: 18px;
+  color: #374151;
+}
+
+.extra {
+  font-weight: 400; /* Regular */
+  font-size: 12px;
 }
