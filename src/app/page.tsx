@@ -1,4 +1,4 @@
-import IntroBar from "./Components/intro-bar.jsx"
+import IntroBar from "./components/intro-bar.jsx"
 
 export default function Home() {
   return (
