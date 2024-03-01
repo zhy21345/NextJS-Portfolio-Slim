@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import NavBar from './components/nav-bar.jsx'
-import FootBar from './components/foot-bar.jsx'
+import Link from "next/link";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +20,17 @@ export default function RootLayout({
       <div className="flex flex-col min-h-screen bg-gray-200">
         {/* header */}
         <header>
-          <NavBar/>
+        <div>
+            <div className="h-18 bg-gray-800 flex flex-wrap items-center justify-between mx-auto p-6">
+                <Link href={"/"} className="text-5xl text-white font-semibold">
+                    Home
+                </Link>
+
+                <div className="text-xl">
+                    Menu
+                </div>
+            </div>
+        </div>
         </header>
 
         {/* main body */}
@@ -30,7 +39,11 @@ export default function RootLayout({
         </main>
 
         {/* footer */}
-        <FootBar/>
+        <footer className="h-16 bg-gray-800 text-white flex items-center justify-center">
+          <div className='extra'>
+           ©copyright developed by Zhang, Haoyuan, 2023
+          </div>
+        </footer>
       </div>
     </div>
   )
