@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Link from "next/link";
+// import Link from "next/link";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,9 +23,9 @@ export default function RootLayout({
         <header>
         <div>
             <div className="h-18 bg-gray-800 flex flex-wrap items-center justify-between mx-auto p-6">
-                <Link href={"/"} className="text-5xl text-white font-semibold">
+                {/* <Link href={"/"} className="text-5xl text-white font-semibold"> */}
                     Home
-                </Link>
+                {/* </Link> */}
 
                 <div className="text-xl">
                     Menu

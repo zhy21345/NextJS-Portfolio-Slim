@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image.js"
-import Link from "next/link"
+// import Link from "next/link"
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className="flex justify-center gap-8">
             {/* work 1 */}
-            <Link href={"/"}>
+            {/* <Link href={"/"}> */}
               <div className="w-[435.82px] h-[255.36px] bg-gray-300">
                 <Image
                 src="/images/terrain_sample.jpg"
@@ -39,7 +39,7 @@ export default function Home() {
                 height={435.82}
                 />
               </div>
-            </Link>
+            {/* </Link> */}
 
             {/* work 2 */}
             <div className="w-[435.82px] h-[255.36px] bg-gray-300">
