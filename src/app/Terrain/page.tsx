@@ -1,8 +1,17 @@
+import Image from "next/image.js"
+
 export default function terrain() {
     return (
       <div>
-        <h1>Hello world!</h1>
-        <p>This is the terrain page</p>
+        <h1 className="text-center m-[2.5%]">Terrain Generation Based On Blender Python API</h1>
+        <div className="flex justify-center">
+          <Image
+                  src="/images/terrain_sample.jpg"
+                  alt="terrain project"
+                  width={435.82}
+                  height={435.82}
+                  />
+        </div>
         <p>The terrain generation project explores python code generated scene in Blender.
           The target is to produce a randomly generated rendered scene from a python script.
         </p>

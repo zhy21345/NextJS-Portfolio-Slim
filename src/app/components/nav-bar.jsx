@@ -1,5 +1,6 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image.js"
 
 const NavBar = () => {
     return(
@@ -9,9 +10,14 @@ const NavBar = () => {
                     Home
                 </Link>
 
-                <div className="text-xl">
-                    Menu
-                </div>
+                <Link href={"https://github.com/zhy21345/NextJS-Portfolio-Slim"}>
+                    <Image 
+                    src="/images/icons8-github-64.svg"
+                    alt="Github Link"
+                    width={64}
+                    height={64}
+                    />
+                </Link>
             </div>
         </div>
     )

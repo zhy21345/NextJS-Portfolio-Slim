@@ -23,11 +23,13 @@ const IntroBar = () => {
             </Link>
 
             {/* work 2 */}
-            <div className="w-[435.82px] h-[255.36px] bg-gray-300">
+            <div className="w-[435.82px] h-[255.36px] bg-gray-300 flex items-center justify-center m-auto text-gray-600">
+              collecting reports
             </div>
 
             {/* work 3 */}
-            <div className="w-[435.82px] h-[255.36px] bg-gray-300">
+            <div className="w-[435.82px] h-[255.36px] bg-gray-300 flex items-center justify-center m-auto text-gray-600">
+              collecting reports
             </div>
           </div>
         </div>
