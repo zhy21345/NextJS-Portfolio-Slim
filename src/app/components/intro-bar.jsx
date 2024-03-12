@@ -23,9 +23,16 @@ const IntroBar = () => {
             </Link>
 
             {/* work 2 */}
-            <div className="w-[435.82px] h-[255.36px] bg-gray-300 flex items-center justify-center m-auto text-gray-600">
-              collecting reports
-            </div>
+            <Link href="/Reconstruction">
+              <div className="w-[435.82px] h-[255.36px] bg-gray-300 flex items-center justify-center m-auto text-gray-600">
+              <Image
+                  src="/images/mesh.png"
+                  alt="reconstruction project"
+                  width={435.82}
+                  height={435.82}
+                  />
+              </div>
+            </Link>
 
             {/* work 3 */}
             <div className="w-[435.82px] h-[255.36px] bg-gray-300 flex items-center justify-center m-auto text-gray-600">
